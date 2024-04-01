@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+  <title>Kharla's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Kharla's Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://drive.google.com/uc?export=download&id=1AjR08qRPd2DDudQOrglgEXQ5nzZPM01a" download="Creative Resume Manabat.pdf">
+        <button class="cv-btn">Download CV</button>
+      </a>
+    
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <h2>Sidebar</h2>
+    <ul>
+        <li>Table of Contents</a></li>
+        <br>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+  <!-- Home Page -->
+
+  <section id="home" class="section">
+    <div class="container">
+      <div class="profile-info-container">
+        <div class="profile-picture">
+          <img src="kharlaimg.png" alt="Student Profile Picture">
+        </div>
+        <div class="student-info">
+          <h2>Kharla Rhoen Manabat</h2>
+          <p>I am 20 years old and I'm an aspiring web developer with a passion for crafting digital experiences.</p>
+          <p>Currently pursuing a degree in Information Technology Major in Web Development, I've studied HTML, 
+            CSS, and JavaScript, and many more languages cultivating a foundation for front-end and back-end 
+            development. Engaging in coding communities, workshops, and etc.</p>
+          <p>I thrive on collaborative projects that will help me improve my teamwork skills. I am eager to contribute my evolving skills to the 
+            dynamic world of web development, I look forward to creating user-friendly and innovative solutions, 
+            embracing challenges, and continually pushing the boundaries of what's possible in this exciting field.</p>
+          <p class="course-text">Bachelor of Science in Information Technology - Major in Web Development</p>
+          <p>My Goals</p>
+          <ul>
+            <li>Improve my growth mindset</li>
+            <li>Improve skills in my career</li>
+            <li>Gain financial freedom</li>
+            <li>Be persistent despite obstacles</li>
+            <li>Learn something new everyday</li>
+          </ul>
+          <p>Philosophy of Education</p>
+          <p class="philo-text">To me, education is a journey of self-discovery and empowerment, not just the collection of knowledge. I see learning as an ongoing adventure that goes beyond the classroom, promoting both academic and personal development.     <a href="#" class="read-more-link">Read More</a></p>
+          <div class="full-philo-text" style="display: none;">
+              <p> My philosophy places curiosity at the heart of meaningful learning. I embrace each learning opportunity with an open mind and a desire for knowledge, embracing the anticipation of discovering new things.   </p>
+              <p> Equal opportunities are the fundamental principles in my educational approach. I think that establishing a culture of respect, empathy, and collaboration will result in a supportive and engaging environment in which every voice is heard and appreciated. </p>
+              <p> Thinking through issues critically and studying are important qualities to develop through education. I always try to take part in discussions and seek deeper understanding, knowing that true learning comes from questions and reflection. As a student, I accept responsibility for my learning path, knowing that success is judged not just by grades, but also by the perseverance, determination, and growth mindset gained along my journey. </p>
+              <p> My philosophy of education is based on desire, creative thinking, and personal responsibility. I think that education has the ability to inspire, encourage, and shape the the next generation of leaders .</p>
+          </div>
+          
+          <br>
+          <button class="view-works-button"><a href="#works">View Works</a></button>
+          <button class="view-works-button"><a href="https://drive.google.com/file/d/1NTwg2yG985StMG8Ixr0TJTg8daLy4TfU/view?usp=sharing">View Transcripts</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+    
+    <!-- Skills Page Section -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="skills-container">
+     <!-- Part 1: Evidence of Professional Affiliations -->
+<div class="part-container">
+  <h3>Professional Affiliations</h3>
+  <div class="affiliations-gallery">
+    <!-- Insert affiliations and their descriptions here -->
+    <div class="gallery-row">
+      <div class="gallery-item">
+        <div class="description">Click Image to View</div>
+        <br>
+        <img src="cert1.png" alt="Affiliation 1" id="img1">
+        <div class="description">
+          Took Red Hat Courses during 1st yr College 
+        </div>
+        <div class="description">
+          Subject: Operating Systems Application 
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="description">Click Image to View</div>
+        <br>
+        <img src="cert2.png" alt="Affiliation 2" id="img2">
+        <div class="description">
+          Completed Google Analytics during 3rd yr College
+        </div>
+        <div class="description">
+          Subject: Web Search Engine Optimization and Analytics 
+        </div>
+        
+      </div>
+
+      <div class="gallery-item">
+        <div class="description">Click Image to View</div>
+        <br>
+        <img src="cert3.jpg" alt="Affiliation 3" id="img3">
+        <div class="description">
+          Attended a seminar about Search Engine Optimization
+        </div>
+        <div class="description">
+          I'm a member of the Code Geeks Organization
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal for Image 1 -->
+<div id="myModal1" class="modal">
+  <span class="close"  id="closeBtn">&times;</span>
+  <img class="modal-content" id="modalImg1">
+</div>
+
+<!-- The Modal for Image 2 -->
+<div id="myModal2" class="modal">
+  <span class="close"  id="closeBtn">&times;</span>
+  <img class="modal-content" id="modalImg2">
+</div>
+
+<!-- The Modal for Image 3 -->
+<div id="myModal3" class="modal">
+  <span class="close"  id="closeBtn">&times;</span>
+  <img class="modal-content" id="modalImg3">
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <button class="close-btn">Close</button>
+</div>
+
+
+      <!-- Part 2: Evidence of Specific Skills -->
+<div class="part-container">
+  <h3>Specific Skills</h3>
+  <br>
+  <br>
+  <div class="skills-list">
+    
+      
+        <div class="skill-item">
+          <img src="canva.png" alt="Canva Logo">
+          <p>Canva</p>
+          <p>Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more.</p>
+        </div>
+      
+      
+        <div class="skill-item">
+          <img src="wordpress.png" alt="WordPress Logo">
+          <p>WordPress</p>
+          <p>WordPress is a content management system (CMS) that allows you to host and build websites. WordPress contains plugin architecture and a template system, so you can customize any website to fit your business, blog, portfolio, or online store.</p>
+        </div>
+      
+     
+        <div class="skill-item">
+          <img src="capcut.png" alt="Capcut Logo">
+          <p>Capcut</p>
+          <p>CapCut is an all-in-one creative platform powered by AI that enables video editing and image design on browsers, Windows, Mac, Android, and iOS.
+          </p>
+        </div>
+      
+        <div class="part-container sample-skills-container">
+          <h3>Specific Skills Works Sample</h3>
+          <br>
+          <!-- Images for Specific Skills Works Sample -->
+          <div class="sample-images">
+            <p>Canva</p>
+              <div class="sample-item">
+                  <img src="canva sample.jpg" alt="Sample Image 1">
+              </div>
+              <p>Wordpress</p>
+              <div class="sample-item">
+                  <img src="wordpress sample.jpg" alt="Sample Image 2">
+              </div>
+              <p>Capcut</p>
+              <div class="sample-item">
+                  <img src="capcut sample.jpg" alt="Sample Image 3">
+              </div>
+          </div>
+      </div>
+      
+      </div>
+      </div>
+
+     
+      <!-- Part 3: Programming Languages -->
+<!-- Part 3: Programming Languages -->
+<div class="part-container">
+  <h3>Programming Languages</h3>
+  <br>
+  <div class="languages-list">
+    <ul>
+      <li>
+        HTML & CSS --- 75%
+      </li>
+      <div class="progress-bar htmlcss-progress-bar">
+        <div class="progress htmlcss-progress"></div>
+      </div>
+
+      <li>
+        Python --- 30%
+      </li>
+
+      <div class="progress-bar python-progress-bar">
+        <div class="progress python-progress"></div>
+      </div>
+
+      <li>
+        PHP --- 50%
+      </li>
+      <div class="progress-bar php-progress-bar">
+        <div class="progress php-progress"></div>
+      </div>
+
+      <li>
+        JavaScript --- 40%
+      </li>
+      <div class="progress-bar javascript-progress-bar">
+        <div class="progress javascript-progress"></div>
+      </div>
+
+      <li>
+        SQL & NoSQL --- 60%
+      </li>
+      <div class="progress-bar sql-progress-bar">
+        <div class="progress sql-progress"></div>
+      </div>
+
+    </ul>
+  </div>
+</div>
+
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+    
+
+
+<!-- Works Page 1 -->
+<section id="works" class="works-section">
+    <div class="section-content">
+      <br><br><br>
+      <h2>Class Projects</h2>
+  
+      <!-- Container for Works Items -->
+      <div class="works-container">
+        <!-- Works Item 1 -->
+        <div class="works-item">
+          <h3>Wordpress Project with Google Anayltics Report</h3>
+          <p>Date: November 18, 2023</p>
+          <p>Project Description: Making a wordpress website for a business and tracking it using Google Anayltics and SEO Optimization</p>
+          <p>Website Link: <a href="https://wearpotential.com/" target="_blank">Wear Potential</a></p>
+  
+          <!-- Image Box 1 -->
+          <div class="image-box">
+            <img src="proj1.jpg" alt="Box 1 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 2 -->
+        <div class="works-item">
+          <h3>WordPress Blog Individual Project</h3>
+          <p>Date: March 14, 2023</p>
+          <p>Project Description: Creating your own WordPress site (Individual Project from Midterm-Finals) </p>
+          <p>Website Link: <a href="https://kharlablogs.wordpress.com/" target="_blank">Kharla Blogs</a></p>
+  
+          <!-- Image Box 2 -->
+          <div class="image-box">
+            <img src="proj2.jpg" alt="Box 2 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 3 -->
+        <div class="works-item">
+          <h3>Read Rover Finals Project</h3>
+          <p>Date: November 16, 2023</p>
+          <p>Project Description: To build custom and unique integrations using various web applications available in the internet. To implement these custom integrations in a hypothetical corporate website. To implement a cloud to local or cloud to cloud data synchronization. </p>
+          <p>Website Link: <a href="https://asi-workspace.bitbucket.io/" target="_blank">Read Rover</a></p>
+  
+          <!-- Image Box 3 -->
+          <div class="image-box">
+            <img src="proj3.jpg" alt="Box 3 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 4 -->
+        <div class="works-item">
+          <h3>Web Application Proposal Flawless Findings using MongoDB</h3>
+          <p>Date: September 2023</p>
+          <p>Project Description: In turning this web application into life we needed resources that would help us build a pleasing output. The main attraction in making this is the database that will house the items in our skincare review web application using MongoDB </p>
+          <p>Documentation Link: <a href="https://docs.google.com/document/d/1GkGcAJJAKwdFMI0ChfCf5hkJW_N1W_yzxMfLfLTsxTA/edit?usp=sharing" target="_blank">Flawless Findings</a></p>
+  
+          <!-- Image Box 4 -->
+          <div class="image-box">
+            <img src="proj4.png" alt="Box 4 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 5 -->
+        <div class="works-item">
+          <h3>Final Project in OOPLANG Sky Airline using Netbeans and SQL</h3>
+          <p>Date: November 2022</p>
+          <p>Project Description: The Airline Management System is essentially a menu-driven program. This format is created with the needs of the user in mind. This is done to make the user's life easier and faster. The system is able to provide much information like passenger's information, ticket number , booking, and ticket cancellation.  </p>
+          <p>Documentation Link: <a href="https://docs.google.com/document/d/1Oq1OCYJ8FaLLZrXBhzG--5yGLYjjPX5AqSi3KSJOqmw/edit?usp=sharing" target="_blank">Sky Airlines</a></p>
+  
+          <!-- Image Box 5 -->
+          <div class="image-box">
+            <img src="proj5.jpg" alt="Box 5 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 6 -->
+        <div class="works-item">
+          <h3>Speak Sharp Final Output for INFOMAN using XAMPP, PHP, and SQL</h3>
+          <p>Date: May 2023</p>
+          <p>Project Description: To provide online language learning courses to foreigners who want to learn new languages. To offer a convenient and easy way for users to take online courses by using CRUD. To establish online presence by providing quality materials to the users. To regularly update information on the database and maintain the website </p>
+          <p>Documentation Link: <a href="https://docs.google.com/document/d/1r_jgcLwN25mGX2jcWNUiXmQ7tcfbJQI_yyPagSUz4ME/edit?usp=sharing" target="_blank">Speak Sharp</a></p>
+  
+          <!-- Image Box 6 -->
+          <div class="image-box">
+            <img src="proj6.jpg" alt="Box 6 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 7 -->
+        <div class="works-item">
+          <h3> C'est la Vie Botique WCServer Project </h3>
+          <p>Date: May 2023</p>
+          <p>Project Description: This website project's main objective is to give customers a seamless, user-friendly, and secure online buying experience. This project also intends to give business owners effective control of their inventory, orders, and payments.</p>
+          <p>Github Link: <a href="https://github.com/jrnng/WCSERVER-FINALS.git" target="_blank">C'est la Vie Botique</a></p>
+          <p>Documentation Link: <a href="https://docs.google.com/document/d/1rorDqztHqJ8hq7ctTZQklsuJfdlii-x84TA8Cz31vkQ/edit?usp=sharing" target="_blank">C'est la Vie Botique</a></p>
+  
+          <!-- Image Box 7 -->
+          <div class="image-box">
+            <img src="proj7.jpg" alt="Box 7 Image">
+          </div>
+        </div>
+  
+        <!-- Works Item 8 -->
+        <div class="works-item">
+          <h3>Final Website for WebTech using HTML/CSS & JS</h3>
+          <p>Date: November 2022 </p>
+          <p>Project Description: Creating a website with minimum of 3 linked webpages. Webpage must have forms that may function with very minimal JavaScript or PHP Webpages must be cohesive to other pages with design theme and layouts CSS must be external or separate file</p>
+          <p>Github Link: <a href="https://github.com/kharlarhn/webtech.git" target="_blank">My Website</a></p>
+  
+          <!-- Image Box 8 -->
+          <div class="image-box">
+            <img src="proj8.jpg" alt="Box 8 Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Works Page 2  -->
+
+    <section id="works" class="section">
+        <div class="container">
+          <div class="works-section">
+            
+            <div class="work-container work-philosophy">
+              <h3>Work Philosophy</h3>
+              <p>I approach each project with a strong commitment to creativity and innovation. I believe in the importance of 
+                collaboration and teamwork, and I think open communication and sharing solutions are essential for achieving great
+                results. My focus is on creating accessible web experiences that exceeds expectations, driven by a commitment to 
+                staying current on evolving technology and design trends.</p>
+              <p>I strive to have the greatest standards of ethics and professionalism, pursuing to complete projects on time 
+                and with consistent quality. I am excited to use my passion for web development to create meaningful projects 
+                that have a good impact, and I also want to improve and showcase my skills.</p>
+            </div>
+            <br>
+
+            <!-- Honors/Awards -->
+
+            <div class="work-container">
+              <h3>Honors/Awards</h3>
+              <br>
+              <div class="image-container">
+                <ul>
+                  <li class="image-item">
+                    <img src="dl1.png" alt="Award 1">
+                    <p>1st Year College 2nd Semester</p>
+                  </li>
+                  <li class="image-item">
+                    <img src="dl2.png" alt="Award 2">
+                    <p>2nd Year College 2nd Semester</p>
+                  </li>
+                  <li class="image-item">
+                    <img src="dl2v.png" alt="Award 3">
+                    <p>2nd Year College 2nd Semester Recognition</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="buttons">
+                <button class="prev-button">Previous</button>
+                <button class="next-button">Next</button>
+              </div>
+            </div>
+          
+            <div class="work-container">
+              <h3>Evaluations</h3>
+              <p>Comments made by my professors in my submissions</p>
+              <br>
+              <div class="evaluation-container">
+                <div class="evaluation-item">
+                  <img src="eval1.jpg" alt="Evaluation 1">
+                </div>
+                <div class="evaluation-item">
+                  <img src="eval2.jpg" alt="Evaluation 2">
+                </div>
+              </div>
+            </div>
+            
+
+
+
+            <div class="work-container">
+              <h3>Courses Grades</h3>
+            
+              <!-- Container for Images -->
+            <div class="image-container">
+              <!-- Image 1 with text -->
+              <div class="image-box">
+                <img src="goodass.png" alt="Image 1">
+                <p> Activity 1 Score: 15/15 </p>
+              </div>
+            
+              <!-- Image 2 with text -->
+              <div class="image-box">
+                <img src="badass.png" alt="Image 2">
+                <p> Activity 2 Score: 10.5/15 </p>
+              </div>
+            </div>
+            <br>
+            <br>
+            
+            <div class="pdf-button-container">
+              <button class="pdf-button" onclick="window.open('https://drive.google.com/file/d/1vEpW5FSNKXKfyT1pJRRN3viYxDt2JlaQ/view?usp=sharing', '_blank')">View 6CloudComp Grades</button>
+              <button class="pdf-button" onclick="window.open('https://drive.google.com/file/d/1vH20iL4YyD8GbdIwHrATT777vHBCEnxe/view?usp=sharing')">View AdWeb Grades </button>
+              <button class="pdf-button" onclick="window.open('https://drive.google.com/file/d/1KzM_PEefeeN4BxIO5htWJCNmWfpSgbtL/view?usp=sharing')">View AppDev Grades</button>
+              <button class="pdf-button" onclick="window.open('https://drive.google.com/file/d/1dAiYB1eZnw0k5847vqNfza-Pntw-zJpX/view?usp=sharing')">View WebDevFol Grades</button>
+            </div>
+            
+            </div>
+            
+            
+
+            <div class="work-container">
+              <h3>Classroom Innovations</h3>
+              <p>Implemented CISCO to enhance classroom learning experience. Cisco is the worldwide leader in IT and networking. We help companies of all sizes transform how people connect, communicate, and collaborate.</p>
+              <br>
+              
+              <!-- Container for Video and Images -->
+              <div class="media-container">
+                <!-- Video -->
+                <div class="video-container">
+                  <video controls>
+                    <source src="cisco.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <!-- Images -->
+                <div class="image-container">
+                  <!-- Image 1 -->
+                  <div class="image-box">
+                    <img src="cisco1.jpg" alt="Image 1">
+                  </div>
+                  
+                  <!-- Image 2 -->
+                  <div class="image-box">
+                    <img src="cisco2.jpg" alt="Image 2">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            
+
+            <div class="work-container">
+              <h3>Sample Recording of Work</h3>
+              <p> AdWeb using Angular </p>
+              <!-- New Video Container -->
+              <p>Click to View Video</p>
+              <div class="powerpoint-video-container">
+                <video id="sampleVideo" controls onclick="toggleVideoSize()">
+                  <source src="samplevid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+            
+
+
+
+          </div>
+        </div>
+      </section>
+      
+
+  <!-- Contact Page -->
+
+  <section id="contact" class="contact-section">
+    <div class="section-content">
+     
+      <!-- Contact Content -->
+      <div class="contact-content">
+        <!-- Left side with image and social media icons -->
+        <div class="contact-left">
+          <h2>Contact Me</h2>
+          <img src="mylogo.png" alt="Contact Image">
+          
+        </div>
+  
+        <!-- Right side with contact form -->
+        <div class="contact-right">
+          <h3>Ready to work with me?</h3>
+          <form>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+  
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+  
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+  
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+
+
+  
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="social-media">
+        <h4>Follow Me</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/kharlarhn?mibextid=LQQJ4d" target="_blank"><img src="fb.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/kharlarhnn/?next=%2F" target="_blank"><img src="ig.png" alt="Instagram"></a>
+          <a href="https://github.com/kharlarhn" target="_blank"><img src="github.png" alt="GitHub"></a>
+        </div>
+      </div>
+      
+
+    </div>
+  </footer>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>

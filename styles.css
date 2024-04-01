@@ -1,0 +1,1173 @@
+html {
+    scroll-behavior: smooth;
+  }  
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f0ea;
+  }
+ 
+  .navbar {
+    background-color: #809ba8;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active {
+    color: black;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+
+  .sidebar {
+    height: 100%;
+    width: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    color:white;
+    font-size: 12px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+
+  .section {
+    padding: 100px 20px;
+    padding-bottom: 25px;
+    padding-top: 60px;
+  }
+  
+  .cv-btn {
+    background-color: rgb(66, 75, 77);
+    border: 2px solid black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+  
+  .cv-btn:hover {
+    background-color: rgb(16, 79, 109);
+   
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  .profile-container {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    padding-top: 20px;
+  }
+  
+  .profile-picture {
+    overflow: hidden;
+    width: 350px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    animation: slideIn 1s ease forwards; /* Sliding animation */
+    padding-top: 100px;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    border-radius: 13%; /* Make the image rounded */
+  }
+  
+  /* Define the animation */
+@keyframes slideIn {
+    from {
+      transform: translateX(-50%); /* Slide from left */
+    }
+    to {
+      transform: translateX(0); /* Slide to original position */
+    }
+  }
+
+
+  .profile-picture:hover img {
+    transform: scale(1.1); /* Zoom in effect on hover */
+  }
+  
+  .profile-info-container {
+    display: flex;
+  }
+  
+
+  .course-text {
+    font-weight: bold;
+  }
+
+  
+
+  .student-info {
+    flex: 1; /* Fill remaining space */
+  }
+
+  .student-info p {
+    text-align: justify;
+  }
+
+
+  .student-info {
+    margin-top: 20px; /* Add spacing above the student info */
+  }
+  
+  .student-info h2 {
+    margin-bottom: 10px; /* Add spacing below the h2 */
+    font-size: 50px;
+  }
+  
+  .student-info h2 {
+    animation: slideFromTop 1s ease forwards; /* Slide from top animation */
+  }
+
+  /* Define the animation */
+  @keyframes slideFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-50px); /* Slide from top */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Slide to original position */
+    }
+  }
+  
+  .affiliation-image img {
+    width: 1000px; /* Set width */
+    height: 500px; /* Set height */
+  }
+ 
+  .professional-affiliations,
+  .specific-skills,
+  .programming-languages {
+  margin-bottom: 20px; /* Add vertical margin between sections */
+  }
+
+
+
+  
+  
+  .evaluation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+  }
+  
+  .evaluation-item {
+    margin-bottom: 70px; /* Adjust the spacing between evaluation items */
+  }
+  
+  .evaluation-item img {
+    width: 1300px; /* Adjust the width of the images as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+
+ 
+  .evaluation-item:hover img {
+    transform: scale(1.1); /* Increase scale on hover */
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .student-info p {
+    margin-bottom: 5px; /* Add spacing below each paragraph */
+    font-size: 19px;
+  }
+  
+
+  .view-works-container {
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .view-works-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid black;
+    border-radius: 20px; /* Rounded border */
+    background-color: transparent;
+    color: black;
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .view-works-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .view-works-button:hover a {
+    color: white; /* Change text color on hover */
+  }
+  
+  .view-works-button a {
+    color: inherit; /* Inherit parent's color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  
+  .table-of-contents {
+    width: 200px; /* Adjust width as needed */
+  }
+
+
+  .work-gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-row {
+    display: flex;
+    flex-basis: 100%; /* Each row takes full width */
+  }
+  
+  .gallery-item {
+    flex: 1;
+    max-width: calc(25% - 20px); /* Adjust width of each item (minus margins) */
+    margin: 10px; /* Adjust spacing between items */
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    margin-top: 10px; /* Add space between image and description */
+  }
+  
+
+  .work-gallery-container {
+    background-color: white;
+    padding: 20px; /* Add padding to create space between the gallery and container */
+  }
+  
+  .works-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .work-container {
+    margin-bottom: 50px; /* Add space between each container */
+  }
+  
+  .work-container h3 {
+    margin-bottom: 10px;
+      font-size: 45px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: left;
+    }
+  
+  
+  .work-container p {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Adjust line spacing as needed */
+  }
+  
+  .work-container ul {
+    padding-left: 20px;
+  }
+  
+  .work-container li {
+    margin-bottom: 10px;
+  }
+
+  .work-container.work-philosophy {
+    text-align: center; /* Center the text */
+    margin-left: auto; /* Move it a little bit to the right */
+    margin-right: auto; /* Move it a little bit to the right */
+    padding-left: 200px;
+    padding-right: 150px;
+    padding-top: auto;
+    padding-bottom: auto;
+    max-width: 1750px; /* Optionally limit the maximum width */
+    border: 1px solid black; /* Set the border to black */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+  }
+  
+  
+
+  .work-philosophy {
+    background-color: #809ba8 ; /* Change background color */
+    color: white;
+    font-family: Times,serif; 
+    font-size: 20px;
+    border-radius: 10px; /* Rounded border */
+    padding: 20px; /* Add padding to create space */
+  }
+
+  .work-philosophy h3 {
+    text-align: center;
+    padding-left: 20px;
+  }
+  
+
+ /* CSS to style the "Read More" link */
+.read-more-link {
+  color: rgb(21, 21, 187); /* Change the color as needed */
+  cursor: pointer;
+}
+
+/* CSS to style the full philosophy of education text */
+.full-philo-text {
+  display: none; /* Hide initially */
+}
+
+/* CSS to style the link to the PDF document */
+.full-philo-text a {
+  display: block;
+  margin-top: 10px; /* Adjust as needed */
+  text-decoration: none;
+  color: rgb(21, 21, 187); /* Change the color as needed */
+}
+
+
+
+
+
+
+
+
+
+  
+  
+ /* Styles for Skills Page Section */
+
+ .skills-container h3 {
+  opacity: 0; /* Initially hide the element */
+  font-size: 40px;
+  transform: translateY(-50px); /* Move the element up by 50px */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add animation transition */
+}
+
+.skills-container.show h3 {
+  opacity: 1; /* Show the element */
+  transform: translateY(0); /* Move the element back to its original position */
+}
+
+
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.part-container {
+  margin-bottom: 50px; /* Add margin between each part */
+  text-align: center; /* Center-align the content */
+}
+
+.part-container h3 {
+  margin-bottom: 20px; /* Add space below the title */
+}
+
+.affiliations-gallery .gallery-row {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Zoom in effect on hover */
+  cursor: pointer; /* Change cursor to indicate clickable element */
+}
+
+/* Style for the modal */
+.modal {
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Style the modal content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  display: block;
+  max-width: 80%; /* Set maximum width */
+  max-height: 80%; /* Set maximum height */
+}
+
+/* Style the close button */
+
+
+.close-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+}
+
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+ 
+}
+
+.work-container h3 {
+  text-align: center; /* Center text within the h3 */
+}
+
+
+
+
+
+.buttons {
+  text-align: center;
+}
+
+.prev-button,
+.next-button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 10px; /* Adjust margin as needed */
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #333;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container ul {
+  list-style-type: none;
+}
+
+.image-container .image-item {
+  display: none;
+}
+
+.image-container .image-item.active {
+  display: block;
+}
+
+.image-item img {
+  width: 750px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* CSS for Horizontal Layout using Flexbox */
+
+/* Ensure flexbox layout for skills-list */
+.skills-list {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Style for each skill item */
+.skill-item {
+  flex: 0 0 calc(33.33% - 20px); /* Set initial width to 33.33% with a little spacing */
+  margin: 10px; /* Add spacing between items */
+  text-align: center; /* Center align content */
+}
+
+.skill-item img {
+  max-width: 100px; /* Set maximum width for images */
+}
+
+
+/* CSS for Specific Skills Works Sample Images */
+.sample-images img {
+  transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+}
+
+.sample-images img:hover {
+  transform: scale(1.1); /* Scale up the image on hover */
+}
+
+
+/* CSS for Specific Skills Works Sample Container */
+.sample-skills-container .sample-images {
+  display: flex;
+  flex-direction: column; /* Display items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.sample-skills-container .sample-item {
+  margin-bottom: 20px; /* Add margin between items */
+  text-align: center; /* Center text */
+}
+
+.sample-skills-container .sample-item img {
+  max-width: 500%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  width: 1250px; /* Set a specific width */
+}
+
+.sample-skills-container .sample-images p {
+  font-weight: bold; /* Example: Make the text bold */
+  font-size: 20px;
+  color: #333; /* Example: Change the text color */
+  margin-bottom: 45px; /* Example: Add some bottom margin */
+}
+
+
+
+
+
+
+
+
+
+/* CSS for Specific Skills Section */
+
+/* Container for each skill item */
+.skill-item {
+  text-align: center; /* Center align the content */
+}
+
+/* Styling for the skill image */
+.skill-item img {
+  width: 100px; /* Set the width of the image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+/* Styling for the skill name */
+.skill-item p:first-child {
+  font-weight: bold; /* Make the skill name bold */
+  margin-bottom: 5px; /* Add some space below the skill name */
+}
+
+/* Styling for the skill description */
+.skill-item p:last-child {
+  font-style: italic; /* Make the skill description italic */
+  color: #666; /* Set the color of the description */
+}
+
+/* CSS for Slower Bouncing Animation */
+
+/* Define the keyframe animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position (no translation) */
+  }
+  50% {
+    transform: translateY(-20px); /* Midway point (bounce up) */
+  }
+}
+
+/* Apply the animation to the images */
+.skill-item img {
+  animation: bounce 1.5s infinite; /* Use the 'bounce' animation with a duration of 1.5 seconds, repeat infinitely */
+}
+
+
+
+
+.languages-list {
+  margin-top: 20px;
+  font-size: 25px;
+
+}
+
+.languages-list ul {
+  list-style-type: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+.languages-list li {
+  margin-bottom: 30px;
+}
+
+.language-name {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px; /* Adjust width as needed */
+}
+
+.htmlcss-progress-bar .progress {
+  animation: fillHtmlcssAnimation 5s infinite linear;
+  background-color: #185a19;
+  width: 20%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow outline */
+}
+
+.python-progress-bar .progress {
+  animation: fillPythonAnimation 5s infinite linear;
+  background-color: #a32c11;
+  width: 50%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow outline */
+}
+
+.php-progress-bar .progress {
+  animation: fillPhpAnimation 5s infinite linear;
+  background-color: #daac17;
+  width: 90%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow outline */
+}
+
+.javascript-progress-bar .progress {
+  animation: fillJavascriptAnimation 5s infinite linear;
+  background-color: #205fc4;
+  width: 20%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow outline */
+}
+
+.sql-progress-bar .progress {
+  animation: fillSqlAnimation 5s infinite linear;
+  background-color: #8a24b6;
+  width: 20%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow outline */
+}
+
+@keyframes fillHtmlcssAnimation {
+  0% { width: 0; }
+  100% { width: 70%; } /* Adjust percentage as needed */
+}
+
+@keyframes fillPythonAnimation {
+  0% { width: 0; }
+  100% { width: 30%; } /* Adjust percentage as needed */
+}
+
+@keyframes fillPhpAnimation {
+  0% { width: 0; }
+  100% { width: 50%; } /* Adjust percentage as needed */
+}
+
+@keyframes fillJavascriptAnimation {
+  0% { width: 0; }
+  100% { width: 40%; } /* Adjust percentage as needed */
+}
+
+@keyframes fillSqlAnimation {
+  0% { width: 0; }
+  100% { width: 60%; } /* Adjust percentage as needed */
+}
+
+  
+
+/* Style for PDF buttons */
+.pdf-button-container {
+  display: flex;
+}
+
+.pdf-button {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 20px; /* Rounded corners */
+  color: #000;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pdf-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+  /* Style for image container */
+.image-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center; /* Vertically align items */
+}
+
+/* Style for each image box */
+.image-box {
+  text-align: center; /* Center text */
+  margin: 0 10px; /* Add horizontal space between image boxes */
+}
+
+/* Style for the image */
+.image-box img {
+  max-width: 100px; /* Adjust image width as needed */
+  height: auto;
+  margin-bottom: 10px; /* Add space below image */
+}
+
+
+
+.video-container {
+  position: relative;
+  width: calc(100vw - 40px); /* Adjust padding as needed */
+  max-width: 360px; /* Maximum width for a phone */
+  height: calc(100vw * 9 / 16); /* 16:9 aspect ratio */
+  max-height: 640px; /* Maximum height for a phone */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-container {
+  display: flex;
+}
+
+
+
+.image-container {
+  flex: 1; /* Takes up all available space */
+  display: flex;
+  
+}
+
+.image-box {
+  margin-bottom: 20px; /* Add some space between images */
+}
+
+.image-box img {
+  max-width: 100%; /* Make sure the image doesn't exceed its container */
+  height: auto; /* Maintain the aspect ratio */
+  width: 300px; /* Adjust the width as needed */
+  display: block; /* Ensure the image is treated as a block element */
+  margin: auto; /* Center the image horizontally */
+}
+
+/* CSS for Hover Animation */
+.image-box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.image-box:hover img {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+
+.powerpoint-video-container {
+  max-width: 640px; /* Set the maximum width of the video container */
+  max-height: 360px; /* Set the maximum height of the video container */
+  margin: 0 auto; /* Center the video container horizontally */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+
+
+
+
+
+
+/* Contact section layout */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contact Content layout */
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 10px; /* Adjust the padding bottom as needed */
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  padding: 20px; /* Add padding to create space around the content */
+  text-align: center; /* Center the text content */
+}
+
+.contact-left img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+.contact-right form {
+  text-align: left;
+}
+
+
+.contact-left h2 {
+  font-size: 25px; /* Adjust the font size as needed */
+  font-family: 'Montserrat', sans-serif;; /* Change the font family as desired */
+  padding-left: 25px;
+}
+
+
+.contact-right label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-right button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    background-color: #809ba8;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-nav li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  footer nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer nav ul li a:hover {
+    color: #666;
+    /* Add additional styles for hover effect */
+  }
+  
+  .social-media {
+    display: flex;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  .social-media img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+  }
+  
+
+  .social-media {
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+
+
+
+
+
+
+
+/* Works section layout */
+.works-section {
+    padding: 20px 0; /* Add padding to the works section */
+    text-align: center;
+  }
+  
+  .works-section h2 {
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+  }
+  
+  
+  .works-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Adjust the gap between items as needed */
+    padding: 0 20px; /* Adjust padding as needed */
+    padding-left: 150px;
+  }
+  
+  .works-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Adjust the width of each works item as needed */
+  }
+  
+  .works-item:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+  
+  .image-box {
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .action-buttons button {
+    background-color: #755f52; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .action-buttons button:hover {
+    background-color: black; 
+  }
+  
+  
